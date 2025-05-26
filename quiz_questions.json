@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is the capital of The Philippines?",
+        "answers": [
+            "Manila",
+            "Quezon City",
+            "Cebu",
+            "Marikina"
+        ],
+        "correct_answer": "a",
+        "category": "Geography ",
+        "difficulty": "intro"
+    },
+    {
+        "question": "What is the country that is part of Asia?",
+        "answers": [
+            "Mexico",
+            "Peru",
+            "Korea",
+            "USA"
+        ],
+        "correct_answer": "c",
+        "category": "Geography ",
+        "difficulty": "intro"
+    }
+]
