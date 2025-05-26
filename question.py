@@ -7,6 +7,7 @@ class QuizQuestion:
         self.correct_answer = ""
         self.category = ""
         self.difficulty = ""
+
     def get_from_user(self):
             print(Fore.YELLOW + "\nEnter a new quiz question:")
             self.question = input(Fore.GREEN + "Question: ")
@@ -31,5 +32,12 @@ class QuizQuestion:
                     break
                 else:
                     print(Fore.RED + "Invalid input. Please enter intro, beginner, or intermediate.")
-
+    def to_dict(self):
+            return {
+                'question': self.question,
+                'answers': self.answers,
+                'correct_answer': self.correct_answer,
+                'category': self.category,
+                'difficulty': self.difficulty
+            }
         
