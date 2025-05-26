@@ -1,4 +1,4 @@
-from quiz_creator_ui import HeaderDisplay
+from quiz_creator_ui import UI
 from quiz_creator_questions import QuizQuestion
 from quiz_creator_storage import QuizStorage
 from colorama import Fore
@@ -8,7 +8,7 @@ class QuizCreator:
         self.storage = QuizStorage()
 
     def run(self):
-        HeaderDisplay.show()
+        UI.show()
         while True:
             question = QuizQuestion()
             question.get_from_user()
