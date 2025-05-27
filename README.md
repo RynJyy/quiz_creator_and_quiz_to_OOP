@@ -18,11 +18,9 @@ Designed with modularity, clarity, and user experience in mind.
 
 ## 📁 Project Structure
 quiz_creator_to_OOP/
-├── main.py # Launches the GUI app
-├── quiz_data_loader.py # Handles loading JSON quiz data
-├── quiz_logic.py # Manages question flow and scoring
-├── question_display.py # Displays the current question
-├── answer_buttons.py # Renders answer choices as buttons
-├── feedback_panel.py # Shows result and control buttons
-├── quiz_gui.py # Coordinates all modules into a running app
-├── quiz_questions.json # Sample question data
+├── main.py                 # Launches the GUI app
+├── quiz_data_loader.py     # Handles loading JSON quiz data
+├── quiz_logic.py           # Manages question flow and scoring
+├── question_display.py     # Displays the current question
+├── answer_buttons.py       # Renders answer choices as buttons
+├── feedback_panel.py       # Shows result and control buttons
