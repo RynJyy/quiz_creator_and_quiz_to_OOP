@@ -8,3 +8,12 @@ class AnswerButtons:
             btn.pack(pady=8)
             self.buttons.append(btn)
         self.on_answer = on_answer
+
+    def set_answers(self, answers, correct_callback):
+        for i, option in enumerate(['a', 'b', 'c', 'd']):
+            self.buttons[i].config(
+                text=answers[i],
+                command=lambda opt=option: self.on_answer(opt),
+                bg="white",
+                activebackground="#d9d9d9"
+            )
