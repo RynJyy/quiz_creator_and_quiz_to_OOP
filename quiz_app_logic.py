@@ -19,3 +19,6 @@ class QuizLogic:
             self.score += 1
         self.questions_asked += 1
         return is_correct, correct
+    
+    def is_finished(self):
+        return self.questions_asked >= self.total_questions
