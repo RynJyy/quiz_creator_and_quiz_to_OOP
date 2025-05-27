@@ -23,5 +23,19 @@ class QuizApp:
         self.answers = AnswerButtons(self.window, self.check_answer)
 
         self.next_question()
-
         self.window.mainloop()
+
+    def next_question(self):
+        if self.logic.is_finished():
+            self.panel.show_final_score(self.logic.score, self.logic.total_questions)
+            self.window.destroy()
+            return
+
+        question = self.logic.next_question()
+        self.display.update(question)
+        self.answers.set_answers(question['answers'], self.check_answer)
+        self.panel.clear_feedback()
+
+    def check_answer(self, answer):
+        is_correct, correct_answer = self.logic.check_answer(answer)
+        self.panel.show_feedback(is_correct, correct_answer)
